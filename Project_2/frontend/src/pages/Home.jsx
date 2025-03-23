@@ -65,11 +65,8 @@ const Home = () => {
             </Card.Body>
           </Card>
         </Col>
-
-   
+        
       </Row>
- 
-
     </Container>
     <Container fluid className="mt-5 pb-3" style={{ backgroundColor: 'aquamarine' }}>
       <Figure className="pt-3 d-flex flex-column flex-md-row align-items-center">

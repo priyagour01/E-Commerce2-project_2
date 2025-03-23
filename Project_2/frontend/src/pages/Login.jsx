@@ -21,13 +21,10 @@ const Login = () => {
         <Form>
       <Row className="mb-3">
       
-
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Enter Email</Form.Label>
           <Form.Control type="email" name="email" />
         </Form.Group>
-
-
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
@@ -35,9 +32,6 @@ const Login = () => {
       </Form.Group>
       </Row>
 
-     
-
-   
       <Button variant="primary" type="submit">
         Submit
       </Button>
@@ -45,13 +39,11 @@ const Login = () => {
         
         </Card.Text>
       </Card.Body>
-      <Card.Footer style={{backgroundColor:"blue", color:"white"}} >National Bank</Card.Footer>
+<Card.Footer style={{backgroundColor:"blue", color:"white"}}>National Bank</Card.Footer>
     </Card>
     </Col>
     </Row>
     </Container>
-   
-   
    
    </>
   )

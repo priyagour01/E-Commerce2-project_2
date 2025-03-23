@@ -6,9 +6,8 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { useState } from 'react';
-import axios from 'axios';
+import axios from 'axios'
 import BASE_URL from '../config/config';
-
 const Registration = () => {
  const [input, setInput] = useState({})
  const handleInput = (e) => {
@@ -25,14 +24,11 @@ const Registration = () => {
         const res = await axios.post(api , input)
         console.log(res)
         alert("Registration Successfull")
-       } catch (error) {
+       } catch (error) {  
         console.log(error)
        }
   }
   
-    
-  
-
   return (
    <>
    <Container>
@@ -71,18 +67,13 @@ const Registration = () => {
 
       <Form.Group className="mb-3" controlId="formGridAddress">
         <Form.Label>Enter Residental Address</Form.Label>
-        <Form.Control name="address"  onChange={handleInput} />
+        <Form.Control type='text' name="address"  onChange={handleInput} />
       </Form.Group>
     
-         
-          
-    
-
-
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridCity">
           <Form.Label>City</Form.Label>
-          <Form.Control />
+          <Form.Control type='text' name='city' onChange={handleInput} />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridState">
@@ -119,11 +110,8 @@ const Registration = () => {
     <option value="Uttarakhand">Uttarakhand</option>
     <option value="West Bengal">West Bengal</option>
 
-
           </Form.Select>
         </Form.Group>
-
-      
       </Row>
 
       <Button variant="primary" type="submit" onClick={handleSubmit}>
@@ -131,9 +119,8 @@ const Registration = () => {
       </Button>
     </Form>
         
-       
       </Card.Body>
-      <Card.Footer style={{backgroundColor:"blue", color:"white"}} >National Bank</Card.Footer>
+  <Card.Footer style={{backgroundColor:"blue", color:"white"}} >National Bank</Card.Footer>
     </Card>
     </Col>
     </Row>
